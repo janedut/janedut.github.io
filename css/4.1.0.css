@@ -1,12 +1,12 @@
 /* 导航栏 */
 /* 模糊 */
 #page-header.nav-fixed #nav {
-    background: rgba(255,255,255,0.5);
-    -webkit-backdrop-filter: saturate(180%) blur(15px);
-    backdrop-filter: saturate(180%) blur(15px);
+    background: rgba(255,255,255,0.72);
+    -webkit-backdrop-filter: saturate(180%) blur(32px);
+    backdrop-filter: saturate(180%) blur(32px);
 }
 [data-theme='dark'] #page-header.nav-fixed > #nav, [data-theme='dark'] #page-header.not-top-img > #nav {
-    background: rgba(29,29,31,0.5);
+    background: rgba(29,29,31,0.72);
 }
 /* 文章list展开 */
 #nav .menus_items .menus_item .menus_item_child {
