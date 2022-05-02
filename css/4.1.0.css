@@ -8,11 +8,15 @@
 [data-theme='dark'] #page-header.nav-fixed > #nav, [data-theme='dark'] #page-header.not-top-img > #nav {
     background: rgba(29,29,31,0.72);
 }
+#page-header.nav-fixed #nav {
+    top: -61px;
+}
+
 /* 文章list展开 */
 #nav .menus_items .menus_item .menus_item_child {
     -webkit-box-shadow: var(--card-hover-box-shadow);
     box-shadow: var(--card-hover-box-shadow);
-    border-radius: 8px;
+    /* border-radius: 8px; */
 }
 /* hover下方小条 */
 #page-header.nav-fixed #nav a:hover, #page-header.nav-fixed #nav #site-name:hover, #page-header.nav-fixed #nav #toggle-menu:hover {
@@ -115,7 +119,7 @@ color: var(--link-color);
 }
 
 [data-theme='dark'] {
-    --main-color: rgb(102, 212, 207);
+    /* --main-color: rgb(102, 212, 207); */
     --link-color: rgb(10, 132, 255);
     --global-bg: #121212;
     --card-bg: #1d1d1f;
@@ -123,8 +127,8 @@ color: var(--link-color);
     --btn-hover-color: var(--main-color);
     --hr-border: #424245;
     --hr-before-color: #424245;
-    --hl-bg: #202020;
-    --hltools-bg: #1a1a1a;
+    --hl-bg: #1b1b1b;
+    --hltools-bg: #323232;
     --hlnumber-bg: var(--hl-bg);
     --scrollbar-color: #2a2a2a;
     --card-hover-box-shadow: none;
@@ -198,6 +202,33 @@ hr {
 #aside-content #card-toc .toc-percentage {
     font-size: 100%;
 }
+#aside-content #card-toc .toc-content .toc-link:hover {
+    color: var(--link-color);
+    margin-left: 8px;
+}
+#aside-content #card-toc .toc-content .toc-link.active {
+    color: #fff;
+    margin-left: 8px;
+}
+
+/* 侧边归档圆角 */
+#aside-content .card-archives ul.card-archive-list > .card-archive-list-item a, #aside-content .card-categories ul.card-category-list > .card-category-list-item a {
+	border-radius: 8px;
+}
+#aside-content .card-archives ul.card-archive-list > .card-archive-list-item a:hover, #aside-content .card-categories ul.card-category-list > .card-category-list-item a:hover {
+    color: white;
+	background-color: var(--main-color);
+}
+
+/* 侧边标签 */
+#aside-content .card-tag-cloud a:hover {
+    color: var(--main-color) !important;
+}
+
+/* 侧边最新文章 */
+#aside-content .aside-list > .aside-list-item .content > .title:hover, #aside-content .aside-list > .aside-list-item .content > .comment:hover {
+    color: var(--main-color);
+}
 
 /* 图片圆角 */
 #article-container img {
@@ -243,6 +274,10 @@ hr {
     line-height: 40px;
     border-radius: 50%;
 }
+.article-sort-item-title:hover {
+    color: var(--main-color)
+}
+
 /* 和图片圆角 */
 .article-sort-item-img {
     border-radius: 10px;

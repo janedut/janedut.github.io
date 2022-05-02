@@ -264,7 +264,7 @@ document.addEventListener('DOMContentLoaded', function () {
       return
     }
 
-    // find the scroll direction
+    // 判断滚动方向
     function scrollDirection (currentTop) {
       const result = currentTop > initTop // true is down & false is up
       initTop = currentTop
@@ -301,7 +301,7 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         } else {
           if (currentTop === 0) {
-            $header.classList.remove('nav-fixed', 'nav-visible')
+            // $header.classList.remove('nav-fixed', 'nav-visible')
           }
           $rightside.style.cssText = "opacity: ''; transform: ''"
         }
