@@ -1,0 +1,318 @@
+/* 导航栏 */
+/* 模糊 */
+#page-header.nav-fixed #nav {
+    background: rgba(255,255,255,0.72);
+    -webkit-backdrop-filter: saturate(180%) blur(8px);
+    backdrop-filter: saturate(180%) blur(8px);
+}
+[data-theme='dark'] #page-header.nav-fixed > #nav, [data-theme='dark'] #page-header.not-top-img > #nav {
+    background: rgba(29,29,31,0.72);
+}
+#page-header.nav-fixed #nav {
+    top: -61px;
+}
+
+/* 文章list展开 */
+#nav .menus_items .menus_item .menus_item_child {
+    -webkit-box-shadow: var(--card-hover-box-shadow);
+    box-shadow: var(--card-hover-box-shadow);
+    /* border-radius: 8px; */
+}
+/* hover下方小条 */
+/* #page-header.nav-fixed #nav a:hover, #page-header.nav-fixed #nav #site-name:hover, #page-header.nav-fixed #nav #toggle-menu:hover {
+    color: var(--main-color);
+} */
+#nav .site-page:not(.child):after {
+    background-color: var(--main-color);
+}
+
+/* foot */
+#footer-wrap {
+    color: var(--font-color);
+}
+#footer-wrap a {
+    color: var(--font-color);
+}
+#footer {
+    background: transparent
+}
+[data-theme='dark'] #web_bg:before, [data-theme='dark'] #footer:before, [data-theme='dark'] #page-header:before {
+    background: transparent
+}
+#footer-wrap a:hover {
+color: var(--link-color);
+}
+
+/* 文章赞赏按钮圆角 */
+.post-reward .reward-main .reward-all {
+    border-radius: 8px;
+}
+.post-reward .reward-button {
+    border-radius: 8px;
+}
+
+/* 版权声明圆角和悬停阴影 */
+#post .post-copyright {
+    border-radius: 10px;
+}
+#post .post-copyright .post-copyright-meta {
+    color: var(--font-color);
+    font-weight: normal;
+}
+#post .post-copyright:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+/* #post .post-copyright:before {
+    color: var(--link-color);
+} */
+
+/* 文章底部标签 */
+#post .tag_share .post-meta__tags {
+    border: 1px solid var(--link-color);
+    color: var(--link-color);
+}
+#post .tag_share .post-meta__tags:hover {
+    background: var(--link-color);
+}
+
+/* 最近文章图片圆角 */
+#aside-content .aside-list > .aside-list-item .thumbnail {
+    border-radius: 5px;
+}
+
+/* 作者卡片follow me按钮圆角 */
+#aside-content .card-info #card-info-btn {
+    border-radius: 8px;
+    /* color: var(--text-highlight-color); */
+}
+
+/* 主页文章列表每个卡片高度 */
+#recent-posts > .recent-post-item {
+    height: 13em;
+}
+@media screen and (max-width: 768px) {
+    #recent-posts > .recent-post-item {
+    height: auto;
+    }   
+}
+/* 主页图片放大时间 */
+.imgHover, .error404 #error-wrap .error-content .error-img img, .article-sort-item-img img, #recent-posts > .recent-post-item .post_cover img.post_bg, #aside-content .aside-list > .aside-list-item .thumbnail > img {
+    -webkit-transition: filter 375ms ease-in 0.2s, -webkit-transform 0.3s;
+    -moz-transition: filter 375ms ease-in 0.2s, -moz-transform 0.3s;
+    -o-transition: filter 375ms ease-in 0.2s, -o-transform 0.3s;
+    -ms-transition: filter 375ms ease-in 0.2s, -ms-transform 0.3s;
+    transition: filter 375ms ease-in 0.2s, transform 0.3s;
+}
+
+:root {
+    /* --global-font-size: 16px; */
+    --main-color: #00c4b6;
+    --link-color: rgb(0, 122, 255);
+    --global-bg: #f5f5f7;
+    --card-bg: #fcfcfc;
+    --btn-bg: rgb(142, 142, 147);
+    /* --btn-hover-color: var(--main-color); */
+    --hr-border: #d2d2d7;
+    /* --hr-before-color: #d2d2d7; */
+    --scrollbar-color: #00000030;
+    --blockquote-bg: rgb(0 196 182 / 5%);
+    --card-box-shadow: none;
+    --pseudo-hover: var(--main-color);
+    --text-bg-hover: var(--hr-border);
+    
+}
+
+[data-theme='dark'] {
+    /* --main-color: rgb(102, 212, 207); */
+    --link-color: rgb(10, 132, 255);
+    --global-bg: #121212;
+    --card-bg: #1d1d1f;
+    --btn-bg: rgb(152, 152, 157);
+    --btn-hover-color: var(--main-color);
+    --hr-border: #424245;
+    /* --hr-before-color: #424245; */
+    --hl-bg: #151515;
+    --hltools-bg: #262626;
+    --hlnumber-bg: var(--hl-bg);
+    --scrollbar-color: #ffffff21;
+    --blockquote-bg: #2c2c2c;
+    --card-hover-box-shadow: none;
+}
+
+/* 右侧按钮圆角 */
+#rightside > div > button, #rightside > div > a {
+    border-radius: 50%;
+}
+/* Chrome和Safari滚动条 */
+*::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+}
+
+
+/* 文章部分 */
+/* 标题高亮 */
+/* #recent-posts > .recent-post-item >.recent-post-info > .article-title:hover {
+    color: var(--main-color);
+} */
+/* 链接 */
+/* #article-container a {
+    color: var(--link-color);
+}
+a:hover {
+    color: var(--link-color);
+} */
+/* 分割线 */
+hr {
+    border: 1px dashed var(--hr-border);
+}
+hr::before {
+    display: none;
+}
+/* 标题左侧装饰 */
+#post > #post-info .post-title {
+    padding-left: 12px;
+    border-left: 6px solid var(--main-color);
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+/* 行内代码样式 */
+#article-container code {
+    /* padding: 2px 4px; */
+    background: rgb(239, 241, 243);
+    /* color: var(--font-color); */
+    border-radius: 5px;
+    border: 1px solid var(--hr-border);
+}
+/* 代码块圆角 */
+#article-container figure.highlight {
+    border-radius: 10px;
+}
+/* 代码语言居中 */
+#article-container figure.highlight .highlight-tools .code-lang {
+    left: 50%;
+    top: 50%;
+    letter-spacing: 0.05em;
+    transform: translate(-50%, -50%);
+}
+
+/* 引用块 */
+blockquote {
+    border-left: 6px solid var(--main-color);
+    border-radius: 5px;
+}
+
+/* 标签圆角 */
+#post .tag_share .post-meta__tags {
+    border-radius: 8px;
+}
+
+/* 目录高亮圆角和数字字体大小 */
+#aside-content #card-toc .toc-content .toc-link.active {
+    border-radius: 5px;
+}
+#aside-content #card-toc .toc-content .toc-link {
+    border-radius: 5px;
+}
+#aside-content #card-toc .toc-percentage {
+    font-size: 100%;
+}
+#aside-content #card-toc .toc-content .toc-link:hover {
+    color: var(--link-color);
+    margin-left: 8px;
+}
+#aside-content #card-toc .toc-content .toc-link.active {
+    color: #fff;
+    margin-left: 8px;
+}
+
+/* 侧边归档圆角 */
+#aside-content .card-archives ul.card-archive-list > .card-archive-list-item a, #aside-content .card-categories ul.card-category-list > .card-category-list-item a {
+	border-radius: 8px;
+}
+#aside-content .card-archives ul.card-archive-list > .card-archive-list-item a:hover, #aside-content .card-categories ul.card-category-list > .card-category-list-item a:hover {
+    color: white;
+	background-color: var(--main-color);
+}
+
+/* 侧边标签 */
+/* #aside-content .card-tag-cloud a:hover {
+    color: var(--main-color) !important;
+} */
+
+/* 侧边最新文章 */
+/* #aside-content .aside-list > .aside-list-item .content > .title:hover, #aside-content .aside-list > .aside-list-item .content > .comment:hover {
+    color: var(--main-color);
+} */
+
+/* 图片圆角 */
+#article-container img {
+    border-radius: 10px;
+}
+
+/* 卡片圆角 */
+.cardHover, .error404 #error-wrap .error-content, .layout > div:first-child:not(.recent-posts), #recent-posts > .recent-post-item, #aside-content .card-widget, .layout > .recent-posts .pagination > *:not(.space) {
+    border-radius: 12px;
+}
+
+/* 段落文字两端对齐 */
+#article-container p {
+    white-space: normal;
+    text-align: justify;
+    word-wrap: break-word;
+}
+#article-container ul li {
+    white-space: normal;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+/* 分页圆角 */
+/* #pagination .page-number.current {
+    background: var(--main-color);
+} */
+.layout > .recent-posts .pagination > *:not(.space) {
+    border-radius: 50%;
+}
+
+/* 移动设备两侧缩进 */
+@media screen and (max-width: 768px) {
+    .layout {
+        padding: 20px 15px;
+    }
+}
+
+/* 归档分页 */
+.layout > div:not(.recent-posts) .pagination .page-number {
+    min-width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+}
+/* .article-sort-item-title:hover {
+    color: var(--main-color)
+} */
+
+/* 文章图片圆角 */
+.article-sort-item-img {
+    border-radius: 10px;
+}
+/* 时间线颜色 */
+.article-sort {
+    border-left: 2px solid var(--btn-bg);
+}
+.article-sort-title:after {
+    background: var(--btn-bg);
+}
+.article-sort-title:before {
+    border: 5px solid var(--btn-bg);
+}
+.article-sort-item:before {
+    border: 3px solid var(--btn-bg);
+}
+/* .article-sort-item.year:before {
+    border-color: var(--main-color);
+} */
+/* .article-sort-item.year:hover:before {
+    border-color: var(--main-color);
+} */
