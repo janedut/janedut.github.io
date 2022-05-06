@@ -75,6 +75,9 @@
 	-ms-transition:filter 375ms ease-in 0.2s,-ms-transform 0.3s;
 	transition:filter 375ms ease-in 0.2s,transform 0.3s
 }
+.imgHover:hover, .error404 #error-wrap .error-content .error-img img:hover, .article-sort-item-img img:hover, #recent-posts > .recent-post-item .post_cover img.post_bg:hover, #aside-content .aside-list > .aside-list-item .thumbnail > img:hover {
+    transform: scale(1.1) rotate(2deg);
+}
 :root {
 	--main-color:#00c4b6;
 	--link-color:rgb(0,122,255);
@@ -110,9 +113,6 @@
 }
 hr {
 	border:1px dashed var(--hr-border)
-}
-hr::before {
-	display:none
 }
 #post > #post-info .post-title {
 	padding-left:12px;

@@ -104,6 +104,9 @@ color: var(--link-color);
     -ms-transition: filter 375ms ease-in 0.2s, -ms-transform 0.3s;
     transition: filter 375ms ease-in 0.2s, transform 0.3s;
 }
+.imgHover:hover, .error404 #error-wrap .error-content .error-img img:hover, .article-sort-item-img img:hover, #recent-posts > .recent-post-item .post_cover img.post_bg:hover, #aside-content .aside-list > .aside-list-item .thumbnail > img:hover {
+    transform: scale(1.1) rotate(2deg);
+}
 
 :root {
     /* --global-font-size: 16px; */
@@ -166,9 +169,9 @@ a:hover {
 hr {
     border: 1px dashed var(--hr-border);
 }
-hr::before {
+/* hr::before {
     display: none;
-}
+} */
 /* 标题左侧装饰 */
 #post > #post-info .post-title {
     padding-left: 12px;
