@@ -283,9 +283,6 @@ hr {
     line-height: 40px;
     border-radius: 50%;
 }
-/* .article-sort-item-title:hover {
-    color: var(--main-color)
-} */
 
 /* 文章图片圆角 */
 .article-sort-item-img {
@@ -304,12 +301,11 @@ hr {
 .article-sort-item:before {
     border: 3px solid var(--btn-bg);
 }
-/* .article-sort-item.year:before {
-    border-color: var(--main-color);
-} */
-/* .article-sort-item.year:hover:before {
-    border-color: var(--main-color);
-} */
+
+/* 夜间模式图片变暗 */
+[data-theme='dark'] img {
+    filter: none;
+}
 
 /* 主页文章列表每个卡片高度 */
 #recent-posts > .recent-post-item {
