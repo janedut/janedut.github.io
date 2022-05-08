@@ -3,4 +3,13 @@
     #recent-posts > .recent-post-item {
         height: auto;
     }
+    #recent-posts > .recent-post-item .post_cover {
+        height: 0;
+    }
+    #recent-posts > .recent-post-item >.recent-post-info {
+        padding: 20px 20px 20px;
+    }
+    .layout {
+        padding: 20px 15px;
+    }
 }
