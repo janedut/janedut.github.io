@@ -302,19 +302,20 @@ hr {
     border: 3px solid var(--btn-bg);
 }
 
+[data-theme='dark'] img {
+    filter: none;
+}
+
 /* 主页文章列表每个卡片高度 */
 #recent-posts > .recent-post-item {
     height: 13em;
 }
 /* 移动设备两侧缩进 */
 @media screen and (max-width: 768px) {
-    [data-theme='dark'] img {
-        filter: none;
-    }
     #recent-posts > .recent-post-item {
         height: auto;
     }
-    .layout {
+    /* .layout {
         padding: 20px 15px;
-    }
+    } */
 }
