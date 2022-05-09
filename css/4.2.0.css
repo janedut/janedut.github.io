@@ -25,9 +25,9 @@
 /* 心跳 */
 .fa-heart {
     color: #ff3b30;
-    animation: heartbeat 1.33s ease-in-out infinite;
+    /* animation: heartbeat 1.33s ease-in-out infinite; */
 }
-@keyframes heartbeat {
+/* @keyframes heartbeat {
 
     0%,
     100% {
@@ -50,7 +50,7 @@
     70% {
         transform: scale(1.1)
     }
-}
+} */
 
 /* 文章list展开 */
 #nav .menus_items .menus_item .menus_item_child {
@@ -64,16 +64,10 @@
 }
 
 /* foot */
-#footer-wrap {
+#footer-wrap, #footer-wrap a {
     color: var(--font-color);
 }
-#footer-wrap a {
-    color: var(--font-color);
-}
-#footer {
-    background: transparent
-}
-[data-theme='dark'] #web_bg:before, [data-theme='dark'] #footer:before, [data-theme='dark'] #page-header:before {
+#footer, [data-theme='dark'] #web_bg:before, [data-theme='dark'] #footer:before, [data-theme='dark'] #page-header:before {
     background: transparent
 }
 #footer-wrap a:hover {
@@ -81,10 +75,7 @@ color: var(--link-color);
 }
 
 /* 文章赞赏按钮圆角 */
-.post-reward .reward-main .reward-all {
-    border-radius: 8px;
-}
-.post-reward .reward-button {
+.post-reward .reward-main .reward-all, .post-reward .reward-button {
     border-radius: 8px;
 }
 
@@ -122,10 +113,10 @@ color: var(--link-color);
 
 /* 主页图片放大时间 */
 .imgHover, .error404 #error-wrap .error-content .error-img img, .article-sort-item-img img, #recent-posts > .recent-post-item .post_cover img.post_bg, #aside-content .aside-list > .aside-list-item .thumbnail > img {
-    -webkit-transition: filter 375ms ease-in 0.2s, -webkit-transform 0.3s;
+    /* -webkit-transition: filter 375ms ease-in 0.2s, -webkit-transform 0.3s;
     -moz-transition: filter 375ms ease-in 0.2s, -moz-transform 0.3s;
     -o-transition: filter 375ms ease-in 0.2s, -o-transform 0.3s;
-    -ms-transition: filter 375ms ease-in 0.2s, -ms-transform 0.3s;
+    -ms-transition: filter 375ms ease-in 0.2s, -ms-transform 0.3s; */
     transition: filter 375ms ease-in 0.2s, transform 0.3s;
 }
 .imgHover:hover, .error404 #error-wrap .error-content .error-img img:hover, .article-sort-item-img img:hover, #recent-posts > .recent-post-item .post_cover img.post_bg:hover, #aside-content .aside-list > .aside-list-item .thumbnail > img:hover {
@@ -215,12 +206,10 @@ hr {
 }
 
 /* 目录高亮圆角和数字字体大小 */
-#aside-content #card-toc .toc-content .toc-link.active {
+#aside-content #card-toc .toc-content .toc-link.active, #aside-content #card-toc .toc-content .toc-link {
     border-radius: 5px;
 }
-#aside-content #card-toc .toc-content .toc-link {
-    border-radius: 5px;
-}
+
 #aside-content #card-toc .toc-percentage {
 	font-size:100%;
 	font-family: "JetBrains Mono";
@@ -252,26 +241,18 @@ hr {
 }
 
 /* 卡片圆角 */
-.cardHover, .error404 #error-wrap .error-content, .layout > div:first-child:not(.recent-posts), #recent-posts > .recent-post-item, #aside-content .card-widget, .layout > .recent-posts .pagination > *:not(.space) {
+.cardHover, .error404 #error-wrap .error-content, .layout > div:first-child:not(.recent-posts), #recent-posts > .recent-post-item, #aside-content .card-widget{
     border-radius: 12px;
 }
 
 /* 段落文字两端对齐 */
-#article-container p {
-    white-space: normal;
-    text-align: justify;
-    word-wrap: break-word;
-}
-#article-container ul li {
-    white-space: normal;
-    text-align: justify;
-    word-wrap: break-word;
+#article-container p, #article-container ol li, #article-container ul li, #recent-posts > .recent-post-item >.recent-post-info > .content{
+    white-space:normal;
+    text-align:justify;
+    word-wrap:break-word;
 }
 
 /* 分页圆角 */
-/* #pagination .page-number.current {
-    background: var(--main-color);
-} */
 .layout > .recent-posts .pagination > *:not(.space) {
     border-radius: 50%;
 }
@@ -310,12 +291,23 @@ hr {
 #recent-posts > .recent-post-item {
     height: 13em;
 }
+/* mobile 侧边栏 */
+#sidebar #sidebar-menus .menus_items .site-page {
+    border-radius: 10px;
+}
+
 /* 移动设备两侧缩进 */
 @media screen and (max-width: 768px) {
     #recent-posts > .recent-post-item {
         height: auto;
     }
-    /* .layout {
-        padding: 20px 15px;
-    } */
+    #recent-posts > .recent-post-item .post_cover {
+        height: 0;
+    }
+    #recent-posts > .recent-post-item >.recent-post-info {
+        padding: 20px 20px 20px;
+    }
+    .layout {
+        padding: 20px 10px;
+    }
 }
