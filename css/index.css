@@ -1,6 +1,7 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
+  overflow-y: overlay;
   -webkit-text-size-adjust: 100%
 }
 
@@ -2212,7 +2213,7 @@ figure.highlight pre .javascript .function {
   -ms-flex: 1 auto;
   flex: 1 auto;
   margin: 0 auto;
-  padding: 15px 15px;
+  padding: 25px 15px;
   max-width: 1200px;
   width: 100%;
 }
@@ -4152,7 +4153,7 @@ h1.page-title + .tag-cloud-list {
 }
 #rightside {
   position: fixed;
-  right: -48px;
+  right: -30px;
   bottom: 40px;
   z-index: 100;
   opacity: 0;
