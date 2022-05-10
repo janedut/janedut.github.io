@@ -127,8 +127,8 @@ color: var(--link-color);
 
     --main-color: #00c4b6;
     --link-color: rgb(0, 122, 255);
-    --global-bg: #f5f5f7;
-    --card-bg: #fcfcfc;
+    --global-bg: #f0f1f5;
+    --card-bg: #ffffff;
     --btn-bg: rgb(142, 142, 147);
 
     --hr-border: #d2d2d7;
@@ -138,14 +138,15 @@ color: var(--link-color);
     --card-box-shadow: none;
     --pseudo-hover: var(--main-color);
     --text-bg-hover: var(--hr-border);
+    --card-hover-box-shadow: none;
     
 }
 
 [data-theme='dark'] {
 
     --link-color: rgb(10, 132, 255);
-    --global-bg: #121212;
-    --card-bg: #1d1d1f;
+    --global-bg: #000000;
+    --card-bg: #1c1c1e;
     --btn-bg: rgb(152, 152, 157);
     --btn-hover-color: var(--main-color);
     --hr-border: #424245;
@@ -246,10 +247,10 @@ hr {
 }
 
 /* 段落文字两端对齐 */
-#article-container p, #article-container ol li, #article-container ul li, #recent-posts > .recent-post-item >.recent-post-info > .content{
-    white-space:normal;
-    text-align:justify;
-    word-wrap:break-word;
+#article-container {
+    white-space: normal;
+    text-align: justify;
+    word-wrap: break-word;
 }
 
 /* 分页圆角 */
@@ -296,6 +297,21 @@ hr {
     border-radius: 10px;
 }
 
+#recent-posts > .recent-post-item:not(:first-child) {
+    margin-top: 15px;
+}
+
+#aside-content .card-widget {
+    margin-top: 15px;
+}
+html {
+	overflow-y:overlay
+}
+
+#rightside {
+    right: -30px;
+}
+
 /* 移动设备两侧缩进 */
 @media screen and (max-width: 768px) {
     #recent-posts > .recent-post-item {
@@ -309,5 +325,8 @@ hr {
     }
     .layout {
         padding: 20px 10px;
+    }
+    #rightside {
+        right: -48px;
     }
 }
