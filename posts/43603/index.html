@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Hexo deploy shell script | AOHUI BLOG.</title><meta name="keywords" content="教程"><meta name="author" content="Aohui Liu"><meta name="copyright" content="Aohui Liu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="red"><meta name="description" content="安装 Node.js 使用 nvm 安装，Github 链接。 最好装一个 Windows Terminal，安装完后输入 nvm version 查看是否安装成功。 12nvm version# 1.1.9 安装 Node.js 并选择需要的版本。若报错，以管理员身份运行。 12nvm install 16.15.0nvm use 16.15.0 安装 Git 直接去 Git 官网下载，全部默认">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Hexo deploy shell script | AOHUI BLOG.</title><meta name="keywords" content="教程"><meta name="author" content="Aohui Liu"><meta name="copyright" content="Aohui Liu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="安装 Node.js 使用 nvm 安装，Github 链接。 最好装一个 Windows Terminal，安装完后输入 nvm version 查看是否安装成功。 12nvm version# 1.1.9 安装 Node.js 并选择需要的版本。若报错，以管理员身份运行。 12nvm install 16.15.0nvm use 16.15.0 安装 Git 直接去 Git 官网下载，全部默认">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo deploy shell script">
 <meta property="og:url" content="https://aohuiliu.fun/posts/43603/index.html">
@@ -113,13 +113,13 @@
       win.activateDarkMode = function () {
         document.documentElement.setAttribute('data-theme', 'dark')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'pink')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
         }
       }
       win.activateLightMode = function () {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'red')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
         }
       }
       const t = saveToLocal.get('theme')
