@@ -1345,7 +1345,7 @@ canvas:not(#ribbon-canvas),
   --white: #fff;
   --text-highlight-color: #1f2d3d;
   --blockquote-color: #6a737d;
-  --blockquote-bg: rgba(0,196,182,0.1);
+  --blockquote-bg: rgba(0,196,182,0.05);
   --reward-pop: #f5f5f5;
   --toc-link-color: #666261;
   --card-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.05);
@@ -5560,8 +5560,9 @@ blockquote.pullquote.right {
   color: #00c4b6;
 }
 #local-search .search-dialog .local-search__hit-item .search-result {
-  margin: 0 0 8px;
+  margin: 0 8px 8px 0;
   word-break: break-all;
+  text-align: justify;
 }
 #local-search .search-dialog .local-search__hit-item .search-keyword {
   color: #f47466;
