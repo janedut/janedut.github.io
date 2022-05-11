@@ -1317,6 +1317,8 @@ canvas:not(#ribbon-canvas),
   }
 }
 :root {
+  --ah-hover-bg: rgba(0,0,0,0.1);
+  --ah-hover-color: #000;
   --global-font-size: 16px;
   --global-bg: #f0f1f5;
   --font-color: #4c4948;
@@ -1336,7 +1338,7 @@ canvas:not(#ribbon-canvas),
   --sidebar-bg: #f6f8fa;
   --btn-hover-color: #00c4b6;
   --btn-color: #fff;
-  --btn-bg: #00c4b6;
+  --btn-bg: #8e8e93;
   --text-bg-hover: rgba(0,196,182,0.7);
   --light-grey: #eee;
   --dark-grey: #cacaca;
@@ -2685,8 +2687,8 @@ h1.page-title + .tag-cloud-list {
   border-radius: 6px;
 }
 #aside-content .card-tag-cloud a:hover {
-  color: #fff !important;
-  background: var(--text-bg-hover);
+  color: var(--ah-hover-color) !important;
+  background: var(--ah-hover-bg);
   border-radius: 6px;
 }
 #aside-content .aside-list > span {
@@ -3511,8 +3513,8 @@ h1.page-title + .tag-cloud-list {
   border-radius: 5px;
 }
 #page-header.not-top-img #nav a:hover {
-  color: #fff;
-  background: var(--text-bg-hover);
+  color: var(--ah-hover-color);
+  background: var(--ah-hover-bg);
   border-radius: 5px;
 }
 #page-header.nav-fixed #nav {
@@ -3535,7 +3537,7 @@ h1.page-title + .tag-cloud-list {
 #page-header.nav-fixed #nav a:hover,
 #page-header.nav-fixed #nav #site-name:hover,
 #page-header.nav-fixed #nav #toggle-menu:hover {
-  color: #fff;
+  color: var(--ah-hover-color);
 }
 #page-header.nav-visible #nav {
   -webkit-transition: all 0.5s;
@@ -3752,7 +3754,7 @@ h1.page-title + .tag-cloud-list {
 }
 #nav .menus_items .menus_item .menus_item_child li:hover {
   border-radius: 5px;
-  background: var(--text-bg-hover);
+  background: $menu-hover-color;
 }
 #nav .menus_items .menus_item .menus_item_child li:first-child {
   border-radius: 5px;
@@ -3981,7 +3983,7 @@ h1.page-title + .tag-cloud-list {
   position: relative;
   margin: 40px 0 10px;
   padding: 10px 16px;
-  border: 1px solid var(--light-grey);
+  border: 1px solid var(--ah-hover-bg);
   border-radius: 10px;
 }
 #post .post-copyright:before {
@@ -4290,8 +4292,8 @@ h1.page-title + .tag-cloud-list {
 }
 #sidebar #sidebar-menus .menus_items .site-page:hover {
   border-radius: 10px;
-  color: #fff;
-  background: var(--text-bg-hover);
+  color: var(--ah-hover-color);
+  background: var(--ah-hover-bg);
 }
 #sidebar #sidebar-menus .menus_items .site-page i:first-child {
   width: 15%;
@@ -5319,6 +5321,8 @@ blockquote.pullquote.right {
   margin-top: -20px;
 }
 [data-theme='dark'] {
+  --ah-hover-bg: rgba(255,255,255,0.2);
+  --ah-hover-color: #fff;
   --global-bg: #000;
   --font-color: rgba(255,255,255,0.7);
   --hr-border: #424245;
@@ -5335,9 +5339,9 @@ blockquote.pullquote.right {
   --tab-button-active-bg: #121212;
   --card-bg: #1c1c1e;
   --sidebar-bg: #121212;
-  --btn-hover-color: #787878;
+  --btn-hover-color: #00c4b6;
   --btn-color: rgba(255,255,255,0.7);
-  --btn-bg: #1f1f1f;
+  --btn-bg: #98989d;
   --text-bg-hover: #383838;
   --light-grey: rgba(255,255,255,0.7);
   --dark-grey: rgba(255,255,255,0.2);
