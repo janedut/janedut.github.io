@@ -1,1 +1,20 @@
-var t1=0,t2=0,timer=null;function isScrollEnd(){(t2=document.documentElement.scrollTop||document.body.scrollTop)==t1&&document.styleSheets[0].addRule("*::-webkit-scrollbar-thumb","display:none;")}document.styleSheets[0].addRule("*::-webkit-scrollbar-thumb","display:none;"),document.onscroll=function(){clearTimeout(timer),timer=setTimeout(isScrollEnd,1e3),t1=document.documentElement.scrollTop||document.body.scrollTop,document.styleSheets[0].addRule("*::-webkit-scrollbar-thumb","display:block;")};
+//滚动条自动隐藏
+var t1 = 0;
+var t2 = 0;
+var timer = null; 
+document.styleSheets[0].addRule('*::-webkit-scrollbar-thumb','display:none;');
+
+// scroll监听
+document.onscroll = function() {
+  clearTimeout(timer);
+  timer = setTimeout(isScrollEnd, 1000);
+  t1 = document.documentElement.scrollTop || document.body.scrollTop;
+  document.styleSheets[0].addRule('*::-webkit-scrollbar-thumb','display:block;');
+}
+
+function isScrollEnd() {
+  t2 = document.documentElement.scrollTop || document.body.scrollTop;
+  if(t2 == t1){
+    document.styleSheets[0].addRule('*::-webkit-scrollbar-thumb','display:none;');
+  }
+}
